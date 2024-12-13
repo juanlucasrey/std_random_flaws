@@ -124,6 +124,7 @@ int main() {
       // this version of discard follows strictly what std describes
       rng1.discard(10000 - 1);
       rng2.discard(10000 - 1);
+      // and gives different numbers!
       assert(rng1() != 1955073260U);
       assert(rng2() != 3409172418970261260U);
 
